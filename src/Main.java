@@ -72,30 +72,3 @@ public class Main {
 
 }
 
-// Laptop l1 = new Laptop();
-// l1.id = 1;
-// l1.ram = 2;
-// l1.ssd = 128;
-// l1.os = "Windows 10 Home Edition";
-// l1.color = "Сирененвый";
-
-// Laptop l2 = new Laptop();
-// l2.id = 2;
-// l2.ram = 4;
-// l2.ssd = 256;
-// l2.os = "Windows 11 Home Edition";
-// l2.color = "Красный";
-
-// Laptop l3 = new Laptop();
-// l3.id = 3;
-// l3.ram = 32;
-// l3.ssd = 512;
-// l3.os = "Windows 11 Pro";
-// l3.color = "Черный";
-
-// Laptop l4 = new Laptop();
-// l4.id = 4;
-// l4.ram = 16;
-// l4.ssd = 512;
-// l4.os = "Windows 10 Home Edition";
-// l4.color = "Пурпурный";
