@@ -46,10 +46,11 @@ sudo dpkg -r docker-ce-cli
 7. В подключенном MySQL репозитории создать базу данных "Друзья человека"
 
 CREATE DATABASE Human_friends;
+
 ![image](https://github.com/Alexandra0331/1/assets/113283659/9593fde2-c27e-40ec-879a-f2d911117956)
 
 
-9. Создать таблицы с иерархией из диаграммы в БД
+8. Создать таблицы с иерархией из диаграммы в БД
 USE Human_friends;
 CREATE TABLE animal_classes
 (
@@ -97,6 +98,8 @@ CREATE TABLE cats
     Genus_id int,
     Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+![image](https://github.com/Alexandra0331/1/assets/113283659/7b0bf3a4-a279-446e-ad15-c07ce443efd7)
+
 
 9. Заполнить низкоуровневые таблицы именами(животных), командами которые они выполняют и датами рождения
 INSERT INTO cats (Name, Birthday, Commands, Genus_id)
