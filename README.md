@@ -46,7 +46,7 @@ sudo dpkg -r docker-ce-cli
 7. В подключенном MySQL репозитории создать базу данных “Друзья человека”
 CREATE DATABASE Human_friends;
 
-8. Создать таблицы с иерархией из диаграммы в БД
+9. Создать таблицы с иерархией из диаграммы в БД
 USE Human_friends;
 CREATE TABLE animal_classes
 (
