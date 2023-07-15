@@ -188,6 +188,7 @@ DELETE FROM camels;
 
 SELECT Name, Birthday, Commands FROM horses
 UNION SELECT  Name, Birthday, Commands FROM donkeys;
+![image](https://github.com/Alexandra0331/1/assets/113283659/680427f6-ed9b-4b91-bfcf-e20efb3b1a99)
 
 11.Создать новую таблицу “молодые животные” в которую попадут все животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице
 CREATE TEMPORARY TABLE animals AS 
@@ -202,6 +203,8 @@ SELECT Name, Birthday, Commands, genus, TIMESTAMPDIFF(MONTH, Birthday, CURDATE()
 FROM animals WHERE Birthday BETWEEN ADDDATE(curdate(), INTERVAL -3 YEAR) AND ADDDATE(CURDATE(), INTERVAL -1 YEAR);
  
 SELECT * FROM yang_animal;
+
+![image](https://github.com/Alexandra0331/1/assets/113283659/26e9f5d4-2abc-4939-954e-7a87e38a231d)
 
 12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.
 SELECT h.Name, h.Birthday, h.Commands, pa.Genus_name, ya.Age_in_month 
@@ -227,4 +230,7 @@ UNION
 SELECT hm.Name, hm.Birthday, hm.Commands, ha.Genus_name, ya.Age_in_month 
 FROM hamsters hm
 LEFT JOIN yang_animal ya ON ya.Name = hm.Name
-LEFT JOIN home_animals ha ON ha.Id = hm.Genus_id;    
+LEFT JOIN home_animals ha ON ha.Id = hm.Genus_id;
+
+![image](https://github.com/Alexandra0331/1/assets/113283659/45560e07-d209-4555-80eb-d7e7fe004504)
+
